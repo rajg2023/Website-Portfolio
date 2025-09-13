@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio | Rajiv Giri</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="css/master.css" />
+</head>
+
+<body>
+  <!-- Website Header -->
+  <header>
+    <!-- Main full name as heading -->
+    <h1>Rajiv Giri</h1>
+    <!-- Subheading with title -->
+    <h2>Senior IT Analyst & QA Engineer</h2>
+    <!-- Contact info with mailto link -->
+    <p>Cincinnati, OH | <a href="mailto:rajivgiri2025@gmail.com">rajivgiri2025@gmail.com</a> | 513.834.3371</p>
+    <!-- Button toggling light/dark mode -->
+    <button class="toggle-btn">Dark Mode</button>
+    <!-- Navigation menu -->
+    <nav>
+      <a href="#summary">Summary</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+    </nav>
+  </header>
+
+  <!-- Professional Summary Section -->
+  <section id="summary">
+    <h3>Professional Summary</h3>
+    <p>
+      Results-oriented IT professional with 9+ years of experience in data analysis, application support, QA/testing,
+      and pharmaceutical operations. Skilled in SQL, Selenium automation, troubleshooting, data validation, and
+      compliance environments including HIPAA, Security GRC, POS, and CRM.
+    </p>
+  </section>
+
+  <!-- Technical Skills Section -->
+  <section id="skills">
+    <h3>Technical Skills</h3>
+    <div class="skills">
+      <!-- Each skill includes a label and animated progress bar -->
+      <div class="skill">
+        Java / C# / Python / SQL
+        <div class="skill-bar">
+          <div class="skill-bar-fill" data-skill="90%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        QA & Automation Testing (Selenium, Appium)
+        <div class="skill-bar">
+          <div class="skill-bar-fill" data-skill="85%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        Databases (Oracle, MySQL, Teradata)
+        <div class="skill-bar">
+          <div class="skill-bar-fill" data-skill="80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        ETL Testing / Data Validation
+        <div class="skill-bar">
+          <div class="skill-bar-fill" data-skill="75%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects with filtering -->
+  <section id="projects" class="projects">
+    <h3>Projects</h3>
+    <!-- Buttons to filter projects by category -->
+    <div class="filter-btns">
+      <button data-filter="all">All</button>
+      <button data-filter="qa">QA/Testing</button>
+      <button data-filter="data">Data Analysis</button>
+      <button data-filter="support">App Support</button>
+    </div>
+    <div class="project-grid">
+      <!-- Projects tagged with category for filtering -->
+      <div class="project-card" data-category="qa">
+        <h4>Automation Testing Suite</h4>
+        <p>Developed Selenium automation scripts for regression testing across web applications.</p>
+      </div>
+      <div class="project-card" data-category="data">
+        <h4>ETL Validation</h4>
+        <p>Performed comprehensive data warehouse testing and mapping validation for business analytics.</p>
+      </div>
+      <div class="project-card" data-category="support">
+        <h4>POS System Stability</h4>
+        <p>Maintained Tier 3/4 POS infrastructure ensuring 99.9% uptime across retail stores.</p>
+      </div>
+      <div class="project-card" data-category="qa">
+        <h4>UAT & Integration Testing</h4>
+        <p>Coordinated UAT sessions and conducted cross-environment validation for enterprise-level systems.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Experience Section -->
+  <section id="experience">
+    <h3>Professional Experience</h3>
+    <p><strong>Senior Analyst | Protiviti (Robert Half), May 2022 - Jan 2024</strong><br />
+      Supported Security GRC & TVM, developed RTMs, validated OFSAA configurations, and enabled CRM launches.</p>
+    <p><strong>Technical Support Consultant | PCMS Datafit, Oct 2017 - Jul 2018</strong><br />
+      Troubleshot Tier 3/4 POS systems, coordinated patches, and managed VMs and servers.</p>
+    <p><strong>Data Analyst | Thrive, Jul 2016 - Feb 2017</strong><br />
+      Conducted ETL testing, identified quality issues, and built flow diagrams.</p>
+    <p><strong>Pharmacy Technician | Humana & Kroger, 2009 - 2015</strong><br />
+      Ensured data accuracy and supported migration from legacy systems.</p>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education">
+    <h3>Education & Training</h3>
+    <ul>
+      <li>B.A., University of North Bengal</li>
+      <li>Java Bootcamp, Cinci Code IT (2017)</li>
+      <li>IT Support & QA Testing Certification, Per Scholas (2016)</li>
+    </ul>
+  </section>
+
+  <!-- Page Footer -->
+  <footer>
+    <p>&copy; 2025 Rajiv Giri | Portfolio Website</p>
+  </footer>
+
+  <!-- Link to external JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

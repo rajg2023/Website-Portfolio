@@ -1,0 +1,179 @@
+/* Root variables for color theming */
+:root {
+  --primary: #0a3d62;
+  --secondary: #ffdd59;
+  --bg: #f9f9f9;
+  --text: #222;
+  --bg-dark: #1e272e;
+  --text-dark: #f1f1f1;
+}
+
+/* Base body styling with font and background */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: background 0.3s, color 0.3s; /* smooth transitions for theme change */
+}
+
+/* Dark mode styles */
+body.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+/* Header styling with fixed primary color background */
+header {
+  background: var(--primary);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  position: relative; /* To position toggle button */
+}
+
+header h1 {
+  font-size: 2.2rem;
+}
+
+/* Dark mode toggle button in header */
+header .toggle-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  cursor: pointer;
+  background: var(--secondary);
+  color: #000;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* Navigation link styling */
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  color: var(--secondary);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Section styling */
+section {
+  padding: 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Section headers */
+h3 {
+  color: var(--primary);
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+/* Skill bars layout with responsive grid */
+.skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+/* Each skill container */
+.skill {
+  margin-bottom: 1rem;
+}
+
+/* Bar container styling */
+.skill-bar {
+  background: #ddd;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+/* Fill color and animation for skill bars */
+.skill-bar-fill {
+  background: var(--secondary);
+  height: 12px;
+  width: 0; /* start empty, animated by JS */
+  transition: width 1.5s ease-in-out;
+}
+
+/* Projects section centered text */
+.projects {
+  text-align: center;
+}
+
+/* Filter buttons container */
+.filter-btns {
+  margin-bottom: 1.5rem;
+}
+
+/* Filter buttons styling */
+.filter-btns button {
+  padding: 8px 14px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  background: var(--primary);
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+/* Hover effect on filter buttons */
+.filter-btns button:hover {
+  background: var(--secondary);
+  color: #000;
+}
+
+/* Grid layout for projects */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Each project card styling */
+.project-card {
+  padding: 1rem;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s;
+}
+
+/* Dark mode project card background and text */
+body.dark .project-card {
+  background: #2f3640;
+  color: var(--text-dark);
+}
+
+/* Slight pop on hover */
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Footer styling with primary color */
+footer {
+  background: var(--primary);
+  padding: 1rem;
+  text-align: center;
+  color: white;
+  margin-top: 2rem;
+}
+
+/* Responsive text for smaller devices */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  header h2 {
+    font-size: 1rem;
+  }
+}
